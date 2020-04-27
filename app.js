@@ -52,6 +52,8 @@ addBtn.addEventListener('click', calc);
 
 function closex(that) {
     if (subRows.length > 2) {
+        console.log(that.parentElement.parentElement.remove());
+
         let lastRow = subRows[subRows.length - 1];
         let a = lastRow.getElementsByTagName('input')[0].value;
         let b = lastRow.getElementsByTagName('input')[1].value;
