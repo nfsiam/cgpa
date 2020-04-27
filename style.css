@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Patrick Hand', cursive;
+}
+body {
+    background-color: #222;
+}
+.calculator {
+    margin: 40px auto;
+    width: fit-content;
+    padding: 0;
+    background-color: #292929;
+}
+.result {
+    text-align: center;
+    font-size: 2rem;
+    color: lightslategray;
+    padding: 20px;
+    color: rgb(255, 230, 0);
+    border-bottom: 1px solid #444;
+}
+
+.sub-row {
+    width: 100%;
+    display: flex;
+    padding: 0px 0px 0px;
+    border: 1px solid #444;
+    border-top: none;
+    justify-content: center;
+    align-items: center;
+}
+.sub-row:nth-of-type(1) {
+    border-top: 1px solid #444;
+}
+.sub-row div {
+    display: inline-block;
+    padding: 10px 20px;
+}
+.sub-row div:nth-of-type(3) {
+    width: calc((100% - 50px) / 2);
+}
+.sub-row div:nth-of-type(2) {
+    width: calc((100% - 50px) / 2);
+}
+.sub-row div:nth-of-type(1) {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.closeBtn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: #444;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0 10px;
+    color: slategray;
+    color: rgb(255, 230, 0);
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.sub-row-container {
+    border-bottom: 1px solid #444;
+    padding: 20px 10px;
+}
+.button-holder {
+    width: fit-content;
+    height: 60px;
+    margin-top: 20px;
+    margin: 20px auto 0;
+}
+#addBtn {
+    background-color: #333;
+    color: rgb(255, 230, 0);
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    padding: 10px 60px;
+    top: 0;
+    right: 20px;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 500px) {
+    .calculator {
+        width: 100%;
+    }
+}
